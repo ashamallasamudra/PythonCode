@@ -24,6 +24,6 @@ num2=input("Enter second Decimal number:")#10
 print(float(num1) + float(num2))
 
 #keping int but passsign float value not accpted
-num1=input("Enter first Decimal number:")#10
-num2=input("Enter second Decimal number:")#10.5
-print(int(num1) + int(num2))
+# num1=input("Enter first Decimal number:")#10
+# num2=input("Enter second Decimal number:")#10.5
+# print(int(num1) + int(num2))
