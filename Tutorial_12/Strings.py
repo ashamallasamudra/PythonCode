@@ -1,7 +1,4 @@
 #Strings
-str1='piter'
-print(str1)
-print(id(str1))
 str1="piter"
 print(str1)
 print(id(str1))
