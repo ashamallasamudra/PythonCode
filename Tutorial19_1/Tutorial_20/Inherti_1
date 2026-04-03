@@ -1,0 +1,81 @@
+#Inheritence
+class A():
+    def m1(self):
+        print("this is parent class")
+class B(A):  #acquring rpop from parent class
+    def m2(self):
+        print("this is child class")
+aobj=A() 
+aobj.m1() 
+
+bobj=B()
+bobj.m1()
+bobj.m2()
+#single using clAass variables
+class A():
+    x=10 
+    y=42
+    def m1(self):
+        print(self.x+self.y)
+class B(A):
+    a,b=10,40
+    def m2(self):
+        print(self.a+self.b)
+bobj=B()
+bobj.m1()
+bobj.m2()
+#Mukti level inheritance
+class C(B):
+    i,j=1,4
+    def m3(self):
+        print(self.i+self.j)
+cobj=C()
+cobj.m1()
+cobj.m2()
+cobj.m3()
+
+#Hirarichal inheritance
+class A():
+    x=1
+    y=2
+    def m1(self):
+        print(self.x+self.y)
+class B(A):
+    a,b=10,20
+    def m2(self):
+        print(self.a+self.b)
+
+
+class C(A):
+    i,j=100,200
+    def m3(self):
+        print(self.i+self.j)
+bobj=B()
+bobj.m1()
+bobj.m2()
+
+cobj=C()
+cobj.m1()
+cobj.m3()
+#multiple inheritance 1 child class inhert prop from 2 parent class
+class A():
+    x=1
+    y=2
+    def m1(self):
+        print(self.x+self.y)
+class B():
+    a,b=10,20
+    def m2(self):
+        print(self.a+self.b)
+
+
+class C(A,B):
+    i,j=100,200
+    def m3(self):
+        print(self.i+self.j)
+
+
+cobj=C()
+cobj.m1()
+cobj.m2()
+cobj.m3()
